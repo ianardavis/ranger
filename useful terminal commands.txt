@@ -1,8 +1,0 @@
-sequelize-auto -o "./db/models" -d stores -h localhost -u Admin -p 3306 -x Pyr0maniac1 -e mysql
-
--t permissions
-
-sudo chmod 0777 ./db -Rf
-
-ps -ef | grep "node app.js" || sudo ss -tnlp | grep :3000
-kill -9 
