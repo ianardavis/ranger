@@ -1,0 +1,19 @@
+@import "sizing.css";
+@import "colours.css";
+.card-header {
+    font-size: 0.8rem;
+    height: 60px;
+    padding: 0;
+}
+.card-header p {
+    text-align: center;
+    font-weight: bold;
+}
+.card-body {
+    text-align: center;
+    padding: 5px;
+    height: 72px;
+}
+.card-body p {
+    margin: 0;
+}

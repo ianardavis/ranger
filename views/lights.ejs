@@ -1,0 +1,113 @@
+<%- include('./partials/head/full') %>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:toggle("rearspots")'>
+        <div class="card">
+            <div id='rearspots' class="card-header update">
+                <p>Rear<br>Spots</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-cogs fa-2x'></i>
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:toggle("frontspots")'>
+        <div class="card">
+            <div id='frontspots' class="card-header update">
+                <p>Front<br>Spots</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-cogs fa-2x'></i>
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:toggle("strobes")'>
+        <div class="card">
+            <div id='strobes' class="card-header update">
+                <p>Strobes</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-cogs fa-2x'></i>
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:toggle("loadbed")'>
+        <div class="card">
+            <div id='loadbed' class="card-header update">
+                <p>Load<br>Bed</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-cogs fa-2x'></i>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:settings("rearspots_reverse")'>
+        <div class="card">
+            <div id='rearspots_reverse' class="card-header setting">
+                <p>With<br>Reverse</p>
+            </div>
+            <div class="card-body">            
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:settings("frontspots_highbeam")'>
+        <div class="card">
+            <div id='frontspots_highbeam' class="card-header setting">
+                <p>With<br>Highbeam</p>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:settings("strobes_hazards")'>
+        <div class="card">
+            <div id='strobes_hazards' class="card-header setting">
+                <p>With<br>Hazards</p>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </a>
+    <div class="col-6 col-sm-3">
+        <div class="card" style='display:none'>
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:settings("rearspots_lights")'>
+        <div class="card">
+            <div id='rearspots_lights' class="card-header setting">
+                <p>With<br>Lights</p>
+            </div>
+            <div class="card-body">            
+            </div>
+        </div>
+    </a>
+    <div class="col-6 col-sm-3">
+        <div class="card" style='display:none'>
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card" style='display:none'>
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/back') %>
+</div>
+<%- include('./partials/foot/js') %>
+<script>
+    setInterval(status_update, 1000);
+</script>
+<%- include('./partials/foot/htmlClose') %>

@@ -1,0 +1,34 @@
+:root {
+    --main-bg-color: #1e307e;
+    --main-text-color: #B9CBE2;
+    --green: rgb(91, 206, 125);
+    --red: rgb(212, 81, 76);
+    --blue: rgb(54, 175, 231);
+    --yellow: rgb(236, 238, 106);
+    --orange: rgb(248, 188, 97);
+}
+body {
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color)
+}
+.card-header p {
+    color: var(--main-bg-color)
+}
+.green {
+    background-color: var(--green);
+}
+.red {
+    background-color: var(--red);
+}
+.blue {
+    background-color: var(--blue);
+}
+.yellow {
+    background-color: var(--yellow);
+}
+.orange {
+    background-color: var(--orange);
+}
+.card-body i {
+    color: var(--main-bg-color);
+}

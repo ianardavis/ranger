@@ -1,0 +1,101 @@
+<%- include('./partials/head/full') %>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:toggle("rfw")'>
+        <div class="card">
+            <div id='rfw' class="card-header">
+                <p class='card-title'>RFW</p>
+                <p class='card-subtitle'></p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-cogs fa-2x'></i>
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:toggle("compressor")'>
+        <div class="card">
+            <div id='compressor' class="card-header update">
+                <p>Compressor</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-fan fa-2x'></i>
+            </div>
+        </div>
+    </a>
+    <a class="col-6 col-sm-3" href='javascript:toggle("camera_reverse")'>
+        <div class="card">
+            <div id='camera_reverse' class="card-header update">
+                <p>Camera</p>
+            </div>
+            <div class="card-body">
+                <i class='fas fa-video fa-2x'></i>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:settings("rfw_4x4")'>
+        <div class="card">
+            <div id='rfw_4x4' class="card-header setting">
+                <p>With 4X4</p>
+            </div>
+            <div class="card-body">
+                <img src="/img/4x4.svg" height='48' alt="">
+            </div>
+        </div>
+    </a>
+    <div class="col-6 col-sm-3">
+        <div class="card" style='display:none;'>
+        </div>
+    </div>
+    <a class="col-6 col-sm-3" href='javascript:settings("camera_reverse")'>
+        <div class="card">
+            <div id='camera_reverse' class="card-header setting">
+                <p>With Reverse</p>
+            </div>
+            <div class="card-body">
+                
+            </div>
+        </div>
+    </a>
+</div>
+<div class="row mb-1">
+    <a class="col-6 col-sm-3" href='javascript:settings("rfw_auto_off")'>
+        <div class="card">
+            <div id='rfw_auto_off' class="card-header setting">
+                <p>Auto Off</p>
+            </div>
+            <div class="card-body">
+                <img src="/img/off.svg" height='48' alt="">                
+            </div>
+        </div>
+    </a>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="card-header blue">
+                <p>Main<br>Battery</p>
+            </div>
+            <div class="card-body">
+                <p class='form-control text-center my-auto' id='main'></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card">
+            <div class="card-header blue">
+                <p>Aux<br>Battery</p>
+            </div>
+            <div class="card-body">
+                <p class='form-control text-center my-auto' id='aux'></p>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/back') %>
+</div>
+<%- include('./partials/foot/js') %>
+<script src="/js/body.js"></script>
+<script>
+    setInterval(status_update, 500);
+    setInterval(battery_update, 500);
+    setInterval(rfw_update, 500);
+</script>
+<%- include('./partials/foot/htmlClose') %>

@@ -1,0 +1,31 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * myriad-pro:
+ *   - http://typekit.com/eulas/00000000000000000001709e
+ * myriad-pro-condensed:
+ *   - http://typekit.com/eulas/0000000000000000000170a8
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-09-10 15:56:34 UTC"}*/
+
+@import url("fontimport.css");
+
+@font-face {
+font-family:"myriad-pro-condensed";
+src:url("l") format("woff2"),url("d.woff") format("woff"),url("a") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"myriad-pro";
+src:url("l (1)") format("woff2"),url("d (1).woff") format("woff"),url("a (1)") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+.tk-myriad-pro-condensed { font-family: "myriad-pro-condensed",sans-serif; }
+.tk-myriad-pro { font-family: "myriad-pro",sans-serif; }

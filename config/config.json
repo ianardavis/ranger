@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "admin",
+        "password": "Pyr0maniac1",
+        "database": "ranger",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "logging": false
+    },
+    "test": {
+        "username": "admin",
+        "password": "Pyr0maniac1",
+        "database": "ranger",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "logging": true
+    },
+    "production": {
+        "username": "ranger_user",
+        "password": "Pyr0maniac1",
+        "database": "ranger",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "logging": false
+    }
+}
